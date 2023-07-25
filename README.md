@@ -37,5 +37,26 @@ After comapring the models, my recommended model is:
   - Decision Tree had the lower MAE (738.3173). Which means our models predictions were off by about 738.32.
   - The RMSE for our Decision Tree Model is lower as well. This means there are less outliers interfering with our model.
 
+## LinearRegression
+
+![image](https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/38f03de5-6ed3-44e0-bfcb-888272902d74)
+
+- Coefficients that Positively Influence Final Grade:
+    - **Outlet_Type_Supermarket Type3:** Type 3 Supermarkets increase item outlet sales by $585.45. 
+    
+    - **Outlet_Identifier_OUT027:** OUT027 outlets increases item outlet sales also by $585.45.
+    
+
+- Coefficient(s) that Negatively Influence Final Grade:
+
+    - **Outlet_Type_Grocery Store:** Grocery stores decreased item outlet sales by $884.69.
+
+## RandomTree Regressor
+
+![image](https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/addb1012-b244-4d09-b697-800f7857ced3)
+
+- Item_MRP is easily the single most important feature for predicting item outlet sales.
+
+
 ### For Further Informtion
 For any additional questions, please contact wrodemoyer@gmail.com
