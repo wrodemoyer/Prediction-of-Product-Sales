@@ -57,6 +57,65 @@ After comapring the models, my recommended model is:
 
 - Item_MRP is easily the single most important feature for predicting item outlet sales.
 
+## Explaning Models with SHAP
+
+### Bar Summary Plot
+![image](https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/05b58509-fbe4-4e39-b702-415b99565411)
+
+**Comparing our most important features according shap vs. orginal feature importance**
+
+- SHAP top 5
+    - item_mrp
+    - outlet_type_grocery store
+    - outlet_identifier_OUT027
+    - outlet_type_supermarket type3
+    - item_visibility 
+- Orginal top 5
+    - item_mrp
+    - outlet_type_grocery store
+    - item_visibility
+    - item_weight
+    - outlet_identifier_OUT027
+
+
+- we see a some similarities.
+- both have item_mrp & outlet_type_grocery store are the 1 & 2 most important features. 
+- both have item_visibility and outlet_identifier_OUT027 in their top 5, but in different spots.
+    - shap
+        - outlet_identifier_OUT027 is 3rd
+        - item_visibility is 5th
+    - orginal
+        - outlet_identifier_OUT027 is 5th
+        - item_visibility is 3rd
+- the differences is shap has outlet_type_supermarket type3 in its top 5, while the orginal has item_weight in its top 5.
+
+
+### Dot Summary Plot
+
+![image](https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/20594977-fdd4-4d2d-9595-1bd1bca04281)
+
+**Top 3 Features Observations**
+
+Red Dots= Higher Values
+
+Blue Dots= Lower Values
+
+- item_mrp
+    - most important feature
+    - the red dots(higher values) are on the positive side, so item_mrp helps in the increase of item outlet sales. 
+    
+
+- Outlet_Type_Grocery Store
+    - the red dots for this feature are clearly on the negative side. This has a negative effect on our target. 
+    - so grocery stores decrease our item outlet sales. 
+    
+    
+- Outlet_Identifier_OUT027
+    - We have positive red dots for this feature(positive effect). 
+    - This store ID increases our item outlet sales. 
+
+
+
 
 ### For Further Informtion
 For any additional questions, please contact wrodemoyer@gmail.com
