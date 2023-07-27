@@ -114,6 +114,55 @@ Blue Dots= Lower Values
     - We have positive red dots for this feature(positive effect). 
     - This store ID increases our item outlet sales. 
 
+## Local Explanations
+
+### Selected Examples
+- Examples: **Outlet_Types**
+    - Grocery Stores
+    - Type3 Supermarkets
+
+    
+- Grocery Stores have our lowest sells while Type3 Supermarkets have the highest. 
+- Lets see what other features contribute to these results.
+
+### LIME
+
+
+**Grocery Store**
+
+<img width="899" alt="Outlet_Type-Grocery Store" src="https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/4e95b14f-5922-4392-bdc5-5c1d9ff2e9bd">
+
+- Outlet_Type_Grocery Store most influenced by:
+    - Outlet_Type_GroceryStore, Item_MRP,Outlet_Identifier_OUT027, Outlet_Type_SuperMarket Type3, and Item_Type_Seafood(All Negative).
+    - We have 1 feature that is positive, but it is definitely outweighed by negatives.
+
+
+**Supermarket Type3**
+
+<img width="915" alt="Outlet_Type-Super Market" src="https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/c998ad49-c677-45d2-a003-fa7ca5edd05d">
+
+- Outlet_Type_Supermarket Type3 most influenced by:
+    - Outlet_type_Grocery Store, Outlet_Identifier_OUT027, Outlet_Type_Supermarket Type3, Item_MRP, and Item_Type_Starchy Foods.
+    - We have 3 negative features, but are outweighed by the positives. 
+
+
+### Individual Force Plot
+
+
+**Grocery Store**
+
+<img width="976" alt="Ind_Force_Plot- Grocery Store" src="https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/05a2db2c-5bf9-4b8a-9dd6-dabd2fc06f44">
+
+- The Features, Outlet_Type_Grocery Store and Item_MRP most influence the predictions.
+
+
+**Supermarket Type3**
+
+<img width="993" alt="Ind_Force_Plot- Super Market" src="https://github.com/wrodemoyer/Prediction-of-Product-Sales/assets/128072861/6d8e47e1-a1a3-43e3-ac1c-836ffae51adf">
+
+- The Features, Outlet_Establishment_Year,Outlet_Type_Grocery Store, Outlet_Type_Supermarket Type3, Outlet_Identifier_OUT027, and Item_MRP most influence the predictions.
+
+
 
 
 
